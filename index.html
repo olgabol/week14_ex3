@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container-for-image">
+        <img src="https://media.istockphoto.com/photos/cats-eye-close-up-picture-id822155492?s=612x612" alt="img"
+            id="catimg">
+    </div>
+    <button onclick="changeBack()">Назад</button>
+    <button onclick="changeImg()">Вперед</button>
+
+</body>
+
+<script>
+    function changeImg() {
+        let image = document.getElementById('catimg');
+        image.src =
+            "https://www.petmd.com/sites/default/files/styles/article_image/public/2021-11/beautiful-eyes-cat-picture.jpg?itok=yhEJ9Uqt";
+    }
+
+    function changeBack() {
+        let image = document.getElementById('catimg');
+        image.src = "https://media.istockphoto.com/photos/cats-eye-close-up-picture-id822155492?s=612x612";
+    }
+</script>
+
+</html>
